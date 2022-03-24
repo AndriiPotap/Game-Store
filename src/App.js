@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import { HomePage } from "./pages/home-page";
 import {Header} from "./components/header"
 import { GamePage } from "./pages/game-page";
+import { OrderPage } from "./pages/order-page";
 
 
 function App() {
@@ -19,15 +20,18 @@ function App() {
           <Header/>
 
           <Routes>
+
             <Route path="/" element={<HomePage />}>
             </Route>
-          </Routes>
 
-          <Routes>
             <Route path="/app/:title" element={<GamePage />}>
             </Route>
+
+            <Route path="/order" element={<OrderPage />}>
+            </Route>
+
           </Routes>
-          
+
         </div>
       </Router>
     </Provider>

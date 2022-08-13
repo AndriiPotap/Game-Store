@@ -6,7 +6,6 @@ import {CartBlock} from "./../cartBlock/"
 
 export const Header = () => {
     return(
-        // test
         <div className="header">
             <div className="wrapper">
                 <Link to="/" className="header__store-item">
